@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style >
+        body{
+            height: 200px;
+            background-image: url('./hinhanh/anhnen.jpg');    
+            background-size: cover;  
+        }
+        *{
+            text-decoration: none;
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial;
+        }
+        .container{
+            max-width: 960px;
+            margin: 0px auto;
+        }
+    #header{
+        background-color:black;
+    }
+    nav{
+        display:flex;
+        justify-content: space-between;
+        line-height: 2em;
+        height: 4em;
+    }
+    #logo{
+        padding-left: 1px;
+        padding-top: 0.3em;
+        width: 200px;
+    }
+    #logo img{
+        max-width: 70px;
+        height: auto;
+    }
+    #main-menu{
+       display: flex;
+       list-style: none;
+       margin: 0;
+    padding: 0%;
+    }
+    #main-menu li{
+        position: relative;
+        font-size: 20px;
+    }
+    #main-menu li a{
+        color: white;
+        display: block;
+        padding: 18px 20px;
+        text-decoration: none;
+    }
+    #main-menu ul.sub-menu{
+        position: absolute;
+        background-color: brown;
+        padding: 15px 0px;
+        list-style: none;
+        width: 200px;
+    }
+    #main-menu ul.sub-menu a{   
+        padding: 8px 15px;
+        border-bottom: 1px solid;
+    }
+    #main-menu ul.sub-menu li:hover a{
+        border-bottom:white;
+    }
+    #main-menu ul.sub-menu li:last-child a{
+        border: none;
+    }
+    #main-menu ul.sub-menu ul.sub-menu{
+        left: 200px;
+    } 
+.thongtin{
+    color:red;
+    font-family:sans-serif;
+}
+    </style>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo"><img src="./hinhanh/anhlogochuachinhthuc.jpg" alt="Unitop.vn">
+                </a>
+                <ul id="main-menu">
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Dịch vụ</a></li>
+                    <li><a href="">Bảng giá</a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="wp-content">
+
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+    <table class="thongtin" boder="1">
+        <tr>
+            <td>choreographer:</td>
+        </tr>
+        <tr>
+            <td>Nguyen Anh Tai</td>
+        </tr>
+    </table>
+</body>
+</html>
